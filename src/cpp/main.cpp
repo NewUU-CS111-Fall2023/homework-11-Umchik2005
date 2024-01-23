@@ -53,6 +53,16 @@ int main() {
 
     cout << "Result: " << result4 << endl;
 
+    cout << "//////////////////////////////////////" << endl;
+
+    Problem5 problem5;
+    string key5 = "the quick brown fox jumps over the lazy dog.";
+    string message5 = "vkbs bs t suepuv";
+
+    string decodedMessage5 = problem5.decodeMessage(key5, message5);
+
+    cout << decodedMessage5 << endl;
+
     return 0;
     
 }
