@@ -13,6 +13,8 @@
 #include "task_4.cpp"
 #include "task_5.cpp"
 #include "task_6.cpp"
+#include "task_7.cpp"
+#include "task_8.cpp"
 
 using namespace std;
 
@@ -62,6 +64,23 @@ int main() {
     string decodedMessage5 = problem5.decodeMessage(key5, message5);
 
     cout << decodedMessage5 << endl;
+
+    cout << "//////////////////////////////////////" << endl;
+
+    Problem6 problem6;
+
+    int n;
+    std::cout << "Enter a number (n): ";
+    std::cin >> n;
+
+    int prime1 = 5; 
+    int prime2 = 7;
+    problem6.generatePrimesGreaterThanN(n, prime1, prime2);
+
+    cout << "Two prime numbers greater than " << n << " are: " << prime1 << " and " << prime2 << std::endl;
+
+    cout << "//////////////////////////////////////" << endl;
+    
 
     return 0;
     
