@@ -17,7 +17,13 @@
 using namespace std;
 
 int main() {
-    // write your code here
+    vector<int> nums = {1, 1, 1, 1, 1};
+    int target = 3;
+
+    Problem1 problem1;
+    int result = problem1.findWaysToEvaluateToTarget(nums, target);
+
+    cout << "Number of ways: " << result << endl;
 
     return 0;
 }
