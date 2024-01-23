@@ -41,9 +41,17 @@ int main() {
     Problem3 problem3;
     bool result3 = problem3.wordBreak(s, wordDict);
 
-    cout << (result ? "True" : "False") << endl;
+    cout << (result3 ? "True" : "False") << endl;
 
     cout << "//////////////////////////////////////" << endl;
+
+    Problem4 problem4;
+    int a4 = 2;
+    vector<int> b = {1, 0};
+
+    int result4 = problem4.superPow(a4, b);
+
+    cout << "Result: " << result4 << endl;
 
     return 0;
     
