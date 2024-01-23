@@ -80,7 +80,12 @@ int main() {
     cout << "Two prime numbers greater than " << n << " are: " << prime1 << " and " << prime2 << std::endl;
 
     cout << "//////////////////////////////////////" << endl;
-    
+
+    Problem7 problem7;
+
+    int a7,b7;
+    cin>>a7>>b7;
+    cout<<problem7.Euler(a7,b7);
 
     return 0;
     
