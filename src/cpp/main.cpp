@@ -24,6 +24,20 @@ int main() {
     int result = problem1.findWaysToEvaluateToTarget(nums, target);
 
     cout << "Number of ways: " << result << endl;
+    cout << "//////////////////////////////////////" << endl;
+
+    vector<int> nums2 = {1, 5, 11, 5};
+
+    Problem2 problem2;
+    bool result2 = problem2.canPartition(nums);
+
+    cout << (result2 ? "True" : "False") << endl;
+
+    cout << "//////////////////////////////////////" << endl;
+
+
+
 
     return 0;
+    
 }
