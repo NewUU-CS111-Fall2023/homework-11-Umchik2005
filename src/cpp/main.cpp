@@ -87,6 +87,37 @@ int main() {
     cin>>a7>>b7;
     cout<<problem7.Euler(a7,b7);
 
+    cout << "//////////////////////////////////////" << endl;
+
+    Problem8 problem8;
+    int p8, q8;
+
+    cout << "Enter the first prime number (p): ";
+    cin >> p8;
+
+    cout << "Enter the second prime number (q): ";
+    cin >> q8;
+
+    if (p8 <= 1 || q8 <= 1) {
+        cerr << "Please enter valid prime numbers greater than 1." << endl;
+        return 1;
+    }
+
+    int n8 = p8 * q8;
+    int phi_n = problem8.eulerTotientFunction(p8, q8);
+
+    int e8;
+    for (e8 = 2; e8 < phi_n; ++e8) {
+        if (problem8.areCoprime(e8, phi_n)) {
+            break;
+        }
+    }
+
+    int d8 = problem8.modInverse(e8, phi_n);
+
+    cout << "Public key (e, n): (" << e8 << ", " << n8 << ")" << endl;
+    cout << "Private key (d, n): (" << d8 << ", " << n8 << ")" << endl;
+
     return 0;
     
 }
