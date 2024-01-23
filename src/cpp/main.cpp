@@ -35,8 +35,15 @@ int main() {
 
     cout << "//////////////////////////////////////" << endl;
 
+    string s = "newuzbekistan";
+    vector<string> wordDict = {"new", "uzbekistan"};
 
+    Problem3 problem3;
+    bool result3 = problem3.wordBreak(s, wordDict);
 
+    cout << (result ? "True" : "False") << endl;
+
+    cout << "//////////////////////////////////////" << endl;
 
     return 0;
     
